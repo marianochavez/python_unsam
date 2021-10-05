@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 
 
 def vida_en_segundos(fecha_nac):
-    """Devuelve la cantidad de segundos desde esa fecha hasta ahora"""
+    """Devuelve la cantidad en segundos desde esa fecha hasta ahora"""
     date_object = datetime.strptime(fecha_nac, '%d/%m/%Y')
     date_now = datetime.now()
     seconds = float((date_now-date_object).total_seconds())
@@ -10,6 +10,7 @@ def vida_en_segundos(fecha_nac):
 
 
 def cuanto_falta(fecha):
+    """"Retorna cuantos dias faltan para esa fecha a partir de ahora"""
     date_now = datetime.now()
     date_next = datetime.strptime(fecha, '%d/%m/%Y')
     days = (date_next-date_now).days

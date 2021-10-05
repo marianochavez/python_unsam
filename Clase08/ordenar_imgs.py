@@ -1,5 +1,4 @@
 import os
-import sys
 from datetime import datetime
 
 
@@ -44,6 +43,7 @@ def procesar(directorio, new_dir_imgs="../Data/imgs_procesadas"):
 
 
 # if __name__ == "__main__":
+    # import sys
 #     try:
 #         if len(sys.argv) == 3:
 #             procesar(sys.argv[1],sys.argv[2])
